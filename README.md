@@ -77,9 +77,9 @@ npm run dev             # → http://localhost:4000
 
 `server/.env`:
 ```env
-MONGODB_URI=mongodb+srv://<user>:<password>@cluster0.xxxxx.mongodb.net/imagify?retryWrites=true&w=majority
-JWT_SECRET=<any_long_random_string>
-CLIPDROP_API_KEY=<your_clipdrop_key>
+MONGODB_URI=
+JWT_SECRET=
+CLIPDROP_API_KEY=
 RAZORPAY_KEY_ID=rzp_test_...        # optional — mock mode without it
 RAZORPAY_KEY_SECRET=...             # optional
 CLIENT_URL=http://localhost:5173
@@ -122,24 +122,3 @@ npm run dev             # → http://localhost:5173
 - **Mock mode (default):** without Razorpay keys, buying credits is instant and free — the full order → verify → credits flow still runs, just without the gateway. Perfect for learning the architecture.
 - **Razorpay TEST mode:** add your test keys to `.env` and the same buttons open the real Razorpay checkout (test card `4111 1111 1111 1111`). The server verifies the HMAC-SHA256 signature before adding credits — **no code changes needed**, mock is only a fallback.
 
----
-
-## Roadmap / ideas
-
-- [ ] Cloudinary image storage (replace local `images/` folder)
-- [ ] Style presets (realistic / anime / 3D / oil painting)
-- [ ] Referral system (invite friends → free credits)
-- [ ] Password reset via email
-- [ ] Deployment (Vercel + Render)
-
----
-
-## What this project teaches
-
-JWT auth flows · bcrypt password hashing · Mongoose schema design (`$push`/`$slice` for capped arrays) · REST API design · third-party API integration · payment gateway architecture (order → checkout → signature verification) · theme systems with CSS variables · localStorage persistence · responsive UI with Tailwind
-
----
-
-## Author
-
-**Sonia Yadav** — designed & built with
