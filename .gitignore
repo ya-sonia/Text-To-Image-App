@@ -1,0 +1,26 @@
+# ── Dependencies ─────────────────────────────────────────
+node_modules/
+
+# ── Environment variables (secrets — NEVER commit) ───────
+.env
+.env.local
+.env.*.local
+
+# ── Build output ─────────────────────────────────────────
+dist/
+build/
+
+# ── Generated user images (server output) ────────────────
+server/images/
+
+# ── Logs ─────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+
+# ── OS / editor junk ─────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
