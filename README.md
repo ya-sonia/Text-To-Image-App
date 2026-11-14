@@ -2,7 +2,7 @@
 
 A full-stack **AI SaaS application** where users turn text prompts into AI-generated images using a credit-based system.
 
-Built with the **MERN stack** (MongoDB, Express, React, Node) — a learning project inspired by the GreatStack tutorial, extended with extra features.
+Built with the **MERN stack** (MongoDB, Express, React, Node) 
 
 ---
 
